@@ -24,12 +24,12 @@ Drop these two files into your own Expo/React Native app.
 Open `LiveChatScreen.tsx` and replace the placeholder constants near the top of the file with the values from your Filum workspace:
 
 ```ts
-const BASE_URL = 'https://chat.filum.ai';
+const BASE_URL = 'https://chat-widget.filum.ai';
 const ORG_ID = 'REPLACE_WITH_YOUR_ORG_ID';
 const INSTALLED_SOURCE_ID = 0; // <-- Replace with YOUR installedSourceId
 ```
 
-- **`BASE_URL`** — keep `https://chat.filum.ai` for Filum production.
+- **`BASE_URL`** — keep `https://chat-widget.filum.ai` for Filum production.
 - **`ORG_ID`** — your organization ID from the Filum dashboard.
 - **`INSTALLED_SOURCE_ID`** — **you must change this to your own `installedSourceId`**. You can find it in your Filum dashboard under the Webchat installation settings. Each customer has their own value.
 

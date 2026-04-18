@@ -21,9 +21,9 @@ import { constructWebchatUrl, type LiveChatSessionData } from './construct-webch
 // NOTE: Replace `ORG_ID` and `INSTALLED_SOURCE_ID` below with the values from
 // your own Filum workspace. You can find these in your Filum dashboard under
 // the Webchat installation settings. `BASE_URL` stays the same for all
-// customers using Filum production (https://chat.filum.ai).
+// customers using Filum production (https://chat-widget.filum.ai).
 // ---------------------------------------------------------------------------
-const BASE_URL = 'https://chat.filum.ai';
+const BASE_URL = 'https://chat-widget.filum.ai';
 const ORG_ID = 'REPLACE_WITH_YOUR_ORG_ID';
 const INSTALLED_SOURCE_ID = 0; // <-- Replace with YOUR installedSourceId
 
@@ -68,7 +68,7 @@ export default function LiveChatScreen() {
         {!webchatLoaded && <ActivityIndicator style={styles.loader} />}
         {liveChatUrl && (
           <WebView
-            originWhitelist={['https://chat.filum.ai', 'https://chat.filum.asia']}
+            originWhitelist={['https://chat-widget.filum.ai', 'https://chat.filum.asia']}
             source={{ uri: liveChatUrl }}
             onError={(event) => {
               console.error(event);
