@@ -68,7 +68,7 @@ export default function LiveChatScreen() {
         {!webchatLoaded && <ActivityIndicator style={styles.loader} />}
         {liveChatUrl && (
           <WebView
-            originWhitelist={['https://chat-widget.filum.ai', 'https://chat.filum.asia']}
+            originWhitelist={['https://chat-widget.filum.ai', 'https://chat-widget.filum.asia']}
             source={{ uri: liveChatUrl }}
             onError={(event) => {
               console.error(event);
